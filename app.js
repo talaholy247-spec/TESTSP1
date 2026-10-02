@@ -1,9 +1,9 @@
 // Dán 4 link CSV của bạn vào đây
 const CSV_SOURCES = {
-    topic1: "1.csv", 
-    topic2: "2.csv",
-    topic3: "3.csv",
-    topic4: "4.csv"
+    topic1: "https://talaholy247-spec.github.io/TESTSP1/1.csv", 
+    topic2: "https://talaholy247-spec.github.io/TESTSP1/2.csv",
+    topic3: "https://talaholy247-spec.github.io/TESTSP1/3.csv",
+    topic4: "https://talaholy247-spec.github.io/TESTSP1/4.csv"
 };
 
 // Các biến trạng thái
