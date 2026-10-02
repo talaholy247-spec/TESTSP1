@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game - Ôn Tập Kiến Thức</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Thư viện đọc CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Màn hình chọn chủ đề -->
+        <div id="topic-screen" class="screen">
+            <h1>Kiểm Tra Kiến Thức</h1>
+            <p>Vui lòng chọn một chủ đề bên dưới để bắt đầu:</p>
+            <div class="topic-list">
+                <button class="topic-btn" data-topic="topic1">Chăm Sóc Da (Skincare)</button>
+                <button class="topic-btn" data-topic="topic2">Sản Phẩm Trang Điểm</button>
+                <button class="topic-btn" data-topic="topic3">Kỹ Năng Bán Hàng</button>
+                <button class="topic-btn" data-topic="topic4">Kiến Thức Thương Hiệu</button>
+            </div>
+        </div>
+
+        <!-- Màn hình tải -->
+        <div id="loading-screen" class="screen hidden">
+            <h2>Đang tải dữ liệu...</h2>
+        </div>
+
+        <!-- Màn hình câu hỏi -->
+        <div id="quiz-screen" class="screen hidden">
+            <div class="header">
+                <span id="progress-text">Câu 1/10</span>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <h2 id="question-text">Nội dung câu hỏi?</h2>
+            <div class="options">
+                <button class="option-btn" id="option-a">Đáp án A</button>
+                <button class="option-btn" id="option-b">Đáp án B</button>
+            </div>
+        </div>
+
+        <!-- Màn hình kết quả -->
+        <div id="result-screen" class="screen hidden">
+            <h2>Kết Quả Của Bạn</h2>
+            <div id="score-circle">
+                <span id="score-text">0</span>/10
+            </div>
+            
+            <div id="review-container">
+                <h3>Ôn tập các câu làm sai:</h3>
+                <div id="wrong-answers-list"></div>
+            </div>
+
+            <button id="restart-btn" class="primary-btn">Chọn Chủ Đề Khác</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
