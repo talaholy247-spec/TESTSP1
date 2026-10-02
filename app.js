@@ -1,9 +1,9 @@
 // Dán 4 link CSV của bạn vào đây
 const CSV_SOURCES = {
-    topic1: "Trắc nghiệm Bột pha uống Vinalink.csv", 
-    topic2: "Trắc nghiệm Chiến lược Sản phẩm.csv",
-    topic3: "Trắc nghiệm Mỹ phẩm Vxebra.csv",
-    topic4: "Trắc nghiệm Sản phẩm Mới.csv"
+    topic1: "1.csv", 
+    topic2: "2.csv",
+    topic3: "3.csv",
+    topic4: "4.csv"
 };
 
 // Các biến trạng thái
